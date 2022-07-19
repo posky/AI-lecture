@@ -127,32 +127,21 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-doit_pandas-master/data/banklist.csv
-doit_pandas-master/data/billboard.csv
-doit_pandas-master/data/concat_1.csv
-doit_pandas-master/data/concat_2.csv
-doit_pandas-master/data/concat_3.csv
-doit_pandas-master/data/country_timeseries.csv
-doit_pandas-master/data/gapminder.tsv
-doit_pandas-master/data/pew.csv
-doit_pandas-master/data/raw_data_urls.txt
-doit_pandas-master/data/scientists.csv
-doit_pandas-master/data/survey_person.csv
-doit_pandas-master/data/survey_site.csv
-doit_pandas-master/data/survey_survey.csv
-doit_pandas-master/data/survey_visited.csv
-doit_pandas-master/data/tesla_stock_quandl.csv
-doit_pandas-master/data/weather.csv
-doit_pandas-master/output/scientist_names_series.csv
-doit_pandas-master/output/scientists_df_no_index.csv
-doit_pandas-master/output/scientists_df.pickle
-doit_pandas-master/output/scientists_df.tsv
-doit_pandas-master/output/scientists_df.xlsx
-doit_pandas-master/output/scientists_names_series_df.xls
-doit_pandas-master/output/scientists_names_series_df.xlsx
-doit_pandas-master/output/scientists_names_series.pickle
-Bike Sharing Demand/bike_data/sampleSubmission.csv
-Bike Sharing Demand/bike_data/test.csv
-Bike Sharing Demand/bike_data/train.csv
-Bike Sharing Demand/output/nn_sub_2207.csv
+
+
 practice.ipynb
+
+# data
+doit_pandas-master/data
+doit_pandas-master/output
+
+Bike Sharing Demand/bike_data
+Bike Sharing Demand/output
+
+Paddy Disease Classification/paddy-disease-classification
+
+Day10/Model.h5
+Day10/submission.csv
+
+dogs-vs-cats/data
+dogs-vs-cats/cats_and_dogs_small_model.h5
