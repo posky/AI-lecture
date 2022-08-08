@@ -1,0 +1,24 @@
+<html>
+  <body bgcolor="#a3cfb4">
+    <center>
+      <h1>[PREDICTION]</h1>
+      <h1>iris predict</h1>
+      <h2>predicted iris : {{data}}</h2>
+      <img
+        src="static\kaggle4th.png"
+        alt="kaggle4th"
+        width="300"
+        height="150"
+      /><br />
+      {%if data == 0%}
+      <h1>setosa</h1>
+      {%endif%} {%if data == 1%}
+      <h1>versicolor</h1>
+      {%endif%} {%if data == 2%}
+      <h1>virginica</h1>
+      {%endif%}
+
+      <a href="/">go back to home page</a>
+    </center>
+  </body>
+</html>
