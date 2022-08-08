@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+            span {
+                width: 200px;
+                color: coral;
+            }
+        </style>
+    </head>
+
+    <body bgcolor="#d4a3ae">
+        <h1>income predict</h1>
+        <br />
+        <form method="POST" , action="{{url_for('start')}}">
+            <b><span> age - 나이(17세~90세) : </span></b>
+            <input type="text" name="a" , placeholder="enter 1" /> <br /><br />
+            <b
+                ><span>
+                    fnlwgt - 사람 대표성을 나타내는 가중치 (13,769 ~ 1,484,705)
+                    :
+                </span></b
+            >
+            <input type="text" name="b" , placeholder="enter 2" /> <br /><br />
+            <b><span> education_num - 교육 수준 수치(1 ~ 16) : </span></b>
+            <input type="text" name="c" , placeholder="enter 3" /> <br /><br />
+            <b><span> hours_per_week - 주당 근무 시간(1 ~ 99) : </span></b>
+            <input type="text" name="d" , placeholder="enter 4" /> <br /><br />
+            <b><span> capital_gain - 양도 소득(0 ~ 99999) : </span></b>
+            <input type="text" name="e" , placeholder="enter 5" /> <br /><br />
+            <b><span> capital_loss - 양도 손실(0 ~ 4356) : </span></b>
+            <input type="text" name="f" , placeholder="enter 6" /> <br /><br />
+            <input type="submit" value="predict!" />
+        </form>
+        <br />
+        <img
+            src="static\kaggle4th.png"
+            alt="income predict"
+            width="400"
+            height="150"
+        />
+    </body>
+</html>

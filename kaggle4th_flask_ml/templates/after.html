@@ -1,0 +1,18 @@
+<html>
+<body bgcolor=#a3cfb4>
+    <center>
+    <h1>  [PREDICTION]  </h1>
+    <h1>income predict</h1>  
+    <h2>predicted income : {{data}}</h2>
+    <img src='static\kaggle4th.png' alt="kaggle4th" width="300" height="150"><br>
+    {%if data == 0%}
+    <h1>50000$ 이하 소득</h1>
+    {%endif%}
+    {%if data == 1%}
+    <h1>50000$ 이상 소득</h1>
+    {%endif%}
+
+    <a href='/'>go back to home page</a>
+    </center>
+</body>
+</html>
