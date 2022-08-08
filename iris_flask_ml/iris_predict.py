@@ -1,11 +1,10 @@
 import os
-import pandas as pd
-import numpy as np
 import pickle
+
+import pandas as pd
 
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
-from sklearn.model_selection import cross_val_score
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
@@ -32,7 +31,7 @@ model = GradientBoostingClassifier(random_state=0)
 model.fit(X_train, y_train)
 print(model.score(X_test, y_test))
 
-# pickle.dump(model, open(os.path.dirname(__file__) + '/model/iris_base.pkl', 'wb'))
+pickle.dump(model, open(os.path.dirname(__file__) + '/model/iris_base.pkl', 'wb'))
 
 print(iris.keys())
 print(iris.target_names)
