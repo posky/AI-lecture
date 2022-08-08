@@ -1,12 +1,12 @@
 import os
+import pickle
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
-import pickle
 import sklearn as sk
 import flask
 
-from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
@@ -62,14 +62,11 @@ print(X.describe())
 
 # model
 # random forest
-# rf = RandomForestClassifier(n_jobs=-1, random_state=0)
-# rf.fit(X_train, y_train)
-# print('\n\nrandom forest')
-# print(f'train set acc: {rf.score(X_train, y_train)}')
-# print(f'test set acc: {rf.score(X_test, y_test)}')
-# cvs = cross_val_score(rf, X, y, n_jobs=-1, scoring='roc_auc')
-# print(f'cross validation score(AUC): {cvs}')
-# print(f'mean cross validation score(AUC): {cvs.mean()}')
+rf = RandomForestClassifier(n_jobs=-1, random_state=0)
+rf.fit(X_train, y_train)
+print('\n\nrandom forest')
+cvs = cross_val_score(rf, X, y, n_jobs=-1, scoring='roc_auc')
+print(f'mean cross validation score(AUC): {cvs.mean()}')
 
 # grandieng boosting
 gb = GradientBoostingClassifier(
@@ -78,21 +75,15 @@ gb = GradientBoostingClassifier(
 )
 gb.fit(X_train, y_train)
 print('\n\ngradient boosting')
-# print(f'train set acc: {gb.score(X_train, y_train)}')
-# print(f'test set acc: {gb.score(X_test, y_test)}')
 cvs = cross_val_score(gb, X, y, cv=5, n_jobs=-1, scoring='roc_auc')
-# print(f'cross validation score(AUC): {cvs}')
 print(f'mean cross validation score(AUC): {cvs.mean()}')
 
 # logistic regression
-# logreg = LogisticRegression(n_jobs=-1)
-# logreg.fit(X_train, y_train)
-# print('\n\nlogictic regression')
-# print(f'train set acc: {logreg.score(X_train, y_train)}')
-# print(f'test set acc: {logreg.score(X_test, y_test)}')
-# cvs = cross_val_score(logreg, X, y, n_jobs=-1, scoring='roc_auc')
-# print(f'cross validation score(AUC): {cvs}')
-# print(f'mean cross validation score(AUC): {cvs.mean()}')
+logreg = LogisticRegression(n_jobs=-1)
+logreg.fit(X_train, y_train)
+print('\n\nlogictic regression')
+cvs = cross_val_score(logreg, X, y, n_jobs=-1, scoring='roc_auc')
+print(f'mean cross validation score(AUC): {cvs.mean()}')
 
 
 model = GradientBoostingClassifier(random_state=0)
