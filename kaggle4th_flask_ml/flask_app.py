@@ -23,7 +23,9 @@ def start():
     val4 = request.form['d']
     val5 = request.form['e']
     val6 = request.form['f']
-    arr = np.array([[val1, val2, val3, val4, val5, val6]])
+    val7 = request.form['g']
+    val8 = request.form['h']
+    arr = np.array([[val1, val2, val3, val4, val5, val6, val7, val8]])
     pred = model.predict(arr)
     print("start pred ", pred)
     return render_template('after.html', data=pred)
