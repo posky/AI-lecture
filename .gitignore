@@ -139,9 +139,33 @@ Bike Sharing Demand/bike_data
 Bike Sharing Demand/output
 
 Paddy Disease Classification/paddy-disease-classification
+Paddy Disease Classification/model.png
+Paddy Disease Classification/vg16_best_weights.hdf5
+Paddy Disease Classification/vgg16_submission.csv
+Paddy Disease Classification/InceptionV3_submission.csv
 
 Day10/Model.h5
 Day10/submission.csv
 
 dogs-vs-cats/data
 dogs-vs-cats/cats_and_dogs_small_model.h5
+
+Day14/map1.html
+
+Titanic/dataset
+Titanic/submission.csv
+
+Day21/house_data
+doit_pandas-master/nasdaq_key.txt
+Introduction_to_Machine_Learning_with_Python/mytree.dot
+Introduction_to_Machine_Learning_with_Python/tree.dot
+
+/data
+
+iris_flask_ml/model
+kaggle4th_flask
+kaggle4th_flask_ml/data
+
+Cars-Purchase_Decision/data
+Mobile-Price-Classification/data/test.csv
+Mobile-Price-Classification/data/train.csv
