@@ -169,3 +169,6 @@ kaggle4th_flask_ml/data
 Cars-Purchase_Decision/data
 Mobile-Price-Classification/data/test.csv
 Mobile-Price-Classification/data/train.csv
+
+american_express-default_prediction/data
+american_express-default_prediction/submission.csv
