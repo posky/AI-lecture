@@ -172,3 +172,10 @@ Mobile-Price-Classification/data/train.csv
 
 american_express-default_prediction/data
 american_express-default_prediction/submission.csv
+
+Santander-Customer-Satisfaction/data
+american_express-default_prediction/catboost_info
+american_express-default_prediction/*.csv
+american_express-default_prediction/*.txt
+american_express-default_prediction/*.xgb
+american_express-default_prediction/ensemble
