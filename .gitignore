@@ -179,3 +179,5 @@ american_express-default_prediction/*.csv
 american_express-default_prediction/*.txt
 american_express-default_prediction/*.xgb
 american_express-default_prediction/ensemble
+
+Day36/dataset
