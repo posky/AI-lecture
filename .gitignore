@@ -181,3 +181,5 @@ american_express-default_prediction/*.xgb
 american_express-default_prediction/ensemble
 
 Day36/dataset
+
+.vscode
